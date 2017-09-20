@@ -11,4 +11,9 @@ import scrapy
 class PyscapyItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    title = scrapy.Field()
+    link = scrapy.Field()
+    desc = scrapy.Field()
+
+    def __str__(self):
+        return '1111111 %s' %   self.link
